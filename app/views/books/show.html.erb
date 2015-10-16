@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<div class="container">
+
   <div class="row">
     <div class="col-md-6">
       <%= image_tag "book.jpg", class: "img-responsive" %>
@@ -11,7 +11,7 @@
           <h4 class="text-right">$<%= @book.price.to_f / 100 %></h4>
     </div>
   </div>
-</div>
+
 
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
