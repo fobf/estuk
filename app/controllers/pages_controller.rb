@@ -5,6 +5,7 @@ class PagesController < ApplicationController
     if current_user
       redirect_to books_url
     end
+    @books = Book.last(4)
   end
   
   
