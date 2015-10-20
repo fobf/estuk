@@ -35,6 +35,7 @@ gem "paperclip"
 
 gem 'aws-sdk-v1'
 
+gem 'friendly_id'
 
 
 # Use ActiveModel has_secure_password
