@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151020174819) do
+ActiveRecord::Schema.define(version: 20151021054950) do
 
   create_table "books", force: :cascade do |t|
     t.string   "name"
@@ -30,10 +30,10 @@ ActiveRecord::Schema.define(version: 20151020174819) do
     t.string   "resource_content_type"
     t.integer  "resource_file_size"
     t.datetime "resource_updated_at"
-    t.string   "slugs"
+    t.string   "slug"
   end
 
-  add_index "books", ["slugs"], name: "index_books_on_slugs", unique: true
+  add_index "books", ["slug"], name: "index_books_on_slug", unique: true
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
